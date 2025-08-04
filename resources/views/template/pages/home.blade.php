@@ -1,38 +1,21 @@
-
-<div class="mobile-menu" id="mobileMenu">
-    <div class="mobile-menu-header">
-        <a href="#top" class="mobile-menu-logo">NexusFlow</a>
-        <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
-    </div>
-    <div class="mobile-menu-cta">
-        <a href="#" class="cyber-button">Access Terminal</a>
-    </div>
-    <nav class="mobile-menu-nav">
-        <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#stats">Stats</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</div>
-
+@extends('template.layout.master')
+@section('body')
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-container">
         <h1 class="hero-title">
-            <span class="hero-nexus">NEXUS</span><span class="hero-flow">FLOW</span>
+            <span class="hero-nexus">Contempus</span><span class="hero-flow">Engineering</span>
         </h1>
-        <p class="hero-subtitle">The quantum leap in team collaboration. Connect minds, sync realities, achieve impossible.</p>
+        <p class="hero-subtitle">More than just power system studies. Intelligent Studies. Intuitive Results. Eliminate confusing and obfuscated results. Attain clarity and understanding.</p>
         <div class="hero-buttons">
-            <a href="#" class="btn-primary">Initialize System</a>
-            <a href="#" class="btn-secondary">View Documentation</a>
+            <a href="{{ route('pages.advantages') }}" class="btn-primary">Our Advantages</a>
+            <a href="{{ route('pages.services') }}" class="btn-secondary">Our Services</a>
         </div>
     </div>
 </section>
 
 <!-- Stats Section -->
-<section class="stats fade-up" id="stats">
+{{--<section class="stats fade-up" id="stats">
     <div class="stats-container">
         <div class="stats-grid">
             <div class="stat-item">
@@ -53,58 +36,58 @@
             </div>
         </div>
     </div>
-</section>
+</section>--}}
 
 <!-- Features Section -->
 <section class="features fade-up" id="features">
     <div class="features-container">
         <div class="section-header">
-            <h2 class="section-title">Core Systems</h2>
-            <p class="section-subtitle">Advanced modules designed for maximum efficiency and seamless integration</p>
+            <h2 class="section-title">Power System Studies and Services</h2>
+            <p class="section-subtitle">Explore our helpful services, and let us help you make clarity of mandated studies</p>
         </div>
 
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">⚡</div>
-                <h3>Quantum Processing</h3>
-                <p>Experience lightning-fast data processing with our quantum-inspired algorithms that handle complex workflows in microseconds.</p>
+                <h3>Short Circuit Studies</h3>
+                <p>We perform short circuit studies in accordance with ANSI or IEC standards. We use proprietary AI tools to clarify data instead of pages of undistinguishable numbers. All data is reviewed by our Professional Engineers.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🔮</div>
-                <h3>Neural Networks</h3>
-                <p>AI-powered decision making that learns from your team's patterns and optimizes collaboration in real-time.</p>
+                <h3>Protective Device Coordination Studies</h3>
+                <p>Let our experts evaluate your system and make recommendations for protective devices (fuses, circuit breakers, relays) to achieve maximum protection of your valuable equipment, and increase uptime by reducing nuisance trips.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🌐</div>
-                <h3>Holographic Interface</h3>
-                <p>Immersive 3D workspace that transcends traditional boundaries, bringing remote teams into a shared reality.</p>
+                <h3>Arc Flash Studies</h3>
+                <p>In Arc Flash Studies, maximizing safety is paramount. Let our AI tools and Professional Engineer reviewed results maximize safety and ease of testing or working on energized equipment.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🛡️</div>
-                <h3>Quantum Encryption</h3>
-                <p>Military-grade security protocols with quantum encryption that makes your data literally impossible to breach.</p>
+                <h3>Harmonic Studies</h3>
+                <p>High levels of harmonic distortion in power delivery can cause overheating of electrical systems and affect computer and motor loads. Let our AI powered analysis pinpoint problems and identify solutions without having you page through thousands of pages of data.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🚀</div>
-                <h3>Hyperdrive Sync</h3>
-                <p>Instantaneous synchronization across all devices and platforms with zero latency, no matter the distance.</p>
+                <h3>Reliability Studies</h3>
+                <p>A chain is only as strong as its weakest link. Let us perform a reliability study of your electrical system to pinpoint areas of concern, and maximize uptime of your plant or campus’ lifeblood – the electrical system!</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🎯</div>
-                <h3>Mind Reading Analytics</h3>
-                <p>Predictive analytics so advanced, it anticipates your team's needs before they even know what they need.</p>
+                <h3>Voltage and Motor Starting Studies</h3>
+                <p>Whenever a motor starts, a voltage drop is experienced on the system. Let us mitigate problems occurring on your electrical system from the impacts of starting motors necessary to your processes.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Pricing Section -->
-<section class="pricing fade-up" id="pricing">
+{{--<section class="pricing fade-up" id="pricing">
     <div class="pricing-container">
         <div class="section-header">
             <h2 class="section-title">Access Levels</h2>
@@ -123,7 +106,7 @@
                     <li>Community support matrix</li>
                     <li>Reality sync enabled</li>
                 </ul>
-                <a href="#" class="btn-secondary">Enter System</a>
+                <a href="#" class="btn-secondary">Ascend</a>
             </div>
 
             <div class="pricing-card featured">
@@ -157,35 +140,38 @@
             </div>
         </div>
     </div>
-</section>
+</section>--}}
 
 <!-- Contact Section -->
 <section class="contact fade-up" id="contact">
     <div class="contact-container">
         <div class="section-header">
-            <h2 class="section-title">Initialize Contact</h2>
-            <p class="section-subtitle">Send a transmission through the neural network</p>
+            <h2 class="section-title">Contact Us Today</h2>
+            <p class="section-subtitle">We’re here to help you make sense of your electrical system and maximize your investment, not to submit thousands of pages of data and walk away. Let us help bring clarity, understanding and relief to your facilities team!</p>
         </div>
 
         <div class="contact-form-wrapper">
-            <div class="contact-form">
-                <div class="form-group">
-                    <label for="name">Neural ID</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your designation" required>
-                </div>
+            <form type="POST" action="#">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Contact Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="email">Quantum Address</label>
-                    <input type="email" id="email" name="email" placeholder="your.id@nexusflow.com" required>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="name@email.com" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="message">Transmission</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Compose your message to the network..." required></textarea>
-                </div>
+                    <div class="form-group">
+                        <label for="message">How Can We Help You</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Let Us Know How We Can Assist...." required></textarea>
+                    </div>
 
-                <button type="submit" class="btn-primary btn-submit">Transmit Message</button>
-            </div>
+                    <button type="submit" class="btn-primary btn-submit">Transmit Message</button>
+                </div>
+            </form>
         </div>
     </div>
 </section>
+@endsection

@@ -24,6 +24,6 @@
 
 @include('template.layout.nav')
 
-@include('template.layout.body')
+@yield('body')
 
 @include('template.layout.footer')

@@ -19,7 +19,7 @@ use Spatie\Permission\Models\Role;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//contempus_pass$$
 Auth::routes(['verify' => true]);
 
 Route::get('dashboard-login', [HomeController::class, 'index'])->name('home');
@@ -37,5 +37,11 @@ Route::get('/test', function () {
 });
 
 Route::get('/', function () {
-    return view('template.layout.master');
-});
+    return view('template.pages.home');
+})->name('pages.home');
+Route::get('/template/advantages', function () {
+    return view('template.pages.advantages');
+})->name('pages.advantages');
+Route::get('/template/services', function () {
+    return view('template.pages.services');
+})->name('pages.services');
