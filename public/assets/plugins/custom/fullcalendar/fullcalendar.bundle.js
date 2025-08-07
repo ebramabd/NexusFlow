@@ -1539,7 +1539,7 @@ var FullCalendar = (function (exports) {
     */
     /*
     At the time of instantiation, this object does not know which cmd-formatting system it will use.
-    It receives this at the time of formatting, as a setting.
+    It receives this at the time of formatting, as a settings.
     */
     var CmdFormatter = /** @class */ (function () {
         function CmdFormatter(cmdStr) {
@@ -4211,7 +4211,7 @@ var FullCalendar = (function (exports) {
         moreLinkText: 'more',
         noEventsText: 'No events to display',
     };
-    var RAW_EN_LOCALE = __assign(__assign({}, MINIMAL_RAW_EN_LOCALE), { 
+    var RAW_EN_LOCALE = __assign(__assign({}, MINIMAL_RAW_EN_LOCALE), {
         // Includes things we don't want other locales to inherit,
         // things that derive from other translatable strings.
         buttonHints: {
@@ -4952,7 +4952,7 @@ var FullCalendar = (function (exports) {
 
     /* eslint max-classes-per-file: "off" */
     /*
-    An object for getting/setting scroll-related information for an element.
+    An object for getting/settings scroll-related information for an element.
     Internally, this is done very differently for window versus DOM element,
     so this object serves as a common interface.
     */
@@ -6796,7 +6796,7 @@ var FullCalendar = (function (exports) {
         var endMarker = framingRange.end;
         var instanceStarts = [];
         while (dayMarker < endMarker) {
-            var instanceStart 
+            var instanceStart
             // if everyday, or this particular day-of-week
             = void 0;
             // if everyday, or this particular day-of-week
@@ -8026,7 +8026,7 @@ var FullCalendar = (function (exports) {
         };
         ViewContainer.prototype.updateAvailableWidth = function () {
             if (this.el && // needed. but why?
-                this.props.aspectRatio // aspectRatio is the only height setting that needs availableWidth
+                this.props.aspectRatio // aspectRatio is the only height settings that needs availableWidth
             ) {
                 this.setState({ availableWidth: this.el.offsetWidth });
             }
@@ -9275,7 +9275,7 @@ var FullCalendar = (function (exports) {
                 footSectionNodes.push(this.renderSection(currentConfig, microColGroupNode, true));
                 configI += 1;
             }
-            // firefox bug: when setting height on table and there is a thead or tfoot,
+            // firefox bug: when settings height on table and there is a thead or tfoot,
             // the necessary height:100% on the liquid-height body section forces the *whole* table to be taller. (bug #5524)
             // use getCanVGrowWithinCell as a way to detect table-stupid firefox.
             // if so, use a simpler dom structure, jam everything into a lone tbody.
@@ -13834,7 +13834,7 @@ var FullCalendar = (function (exports) {
             if (!slatCoords) {
                 return null;
             }
-            return segs.map(function (seg, i) { return (createElement(NowIndicatorRoot, { isAxis: false, date: date, 
+            return segs.map(function (seg, i) { return (createElement(NowIndicatorRoot, { isAxis: false, date: date,
                 // key doesn't matter. will only ever be one
                 key: i }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("div", { ref: rootElRef, className: ['fc-timegrid-now-indicator-line'].concat(classNames).join(' '), style: { top: slatCoords.computeDateTop(seg.start, date) } }, innerContent)); })); });
         };

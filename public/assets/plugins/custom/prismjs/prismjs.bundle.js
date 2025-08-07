@@ -37,7 +37,7 @@ var Prism = (function (_self) {
 		 * current page after the page finished loading. This might be a problem if e.g. you wanted to asynchronously load
 		 * additional languages or plugins yourself.
 		 *
-		 * By setting this value to `true`, Prism will not automatically highlight all code elements on the page.
+		 * By settings this value to `true`, Prism will not automatically highlight all code elements on the page.
 		 *
 		 * You obviously have to change this value before the automatic highlighting started. To do this, you can add an
 		 * empty Prism object into the global scope before loading the Prism script like this:
@@ -59,7 +59,7 @@ var Prism = (function (_self) {
 		 * `addEventListener` to communicate with its parent instance. However, if you're using Prism manually in your
 		 * own worker, you don't want it to do this.
 		 *
-		 * By setting this value to `true`, Prism will not add its own listeners to the worker.
+		 * By settings this value to `true`, Prism will not add its own listeners to the worker.
 		 *
 		 * You obviously have to change this value before Prism executes. To do this, you can add an
 		 * empty Prism object into the global scope before loading the Prism script like this:

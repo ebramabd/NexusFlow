@@ -1,7 +1,16 @@
 <!-- Navigation -->
+@php
+$logo = \App\Models\Settings::where('key','logo')->first();
+@endphp
 <nav>
     <div class="nav-container">
-        <a href="{{ route('pages.home') }}" class="logo">ContempusEngineering</a>
+        <a href="{{ route('pages.home') }}" class="logo">
+            @if($logo->value)
+                <img src="{{asset($logo->value)}}" style="height: 60px; width: 60px">
+            @else
+                ContempusEngineering
+            @endif
+        </a>
         <ul class="nav-links">
             <li><a href="{{ route('pages.services') }}">Services</a></li>
             <li><a href="{{ route('pages.advantages') }}">Our Advantages</a></li>

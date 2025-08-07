@@ -29,14 +29,14 @@ https://templatemo.com/tm-594-nexus-flow
                 mobileMenu.classList.add('active');
                 mobileMenuOverlay.classList.add('active');
                 document.body.style.overflow = 'hidden';
-                
+
                 // Reset and trigger animations for links
                 mobileMenuLinks.forEach((link, index) => {
                     if (link) {
                         link.style.animation = 'none';
                         link.style.opacity = '0';
                         link.style.transform = 'translateX(20px)';
-                        
+
                         // Apply animation with delay
                         setTimeout(() => {
                             if (link) {
@@ -45,13 +45,13 @@ https://templatemo.com/tm-594-nexus-flow
                         }, 250 + (index * 100));
                     }
                 });
-                
+
                 // Animate CTA button
                 if (mobileMenuCta) {
                     mobileMenuCta.style.animation = 'none';
                     mobileMenuCta.style.opacity = '0';
                     mobileMenuCta.style.transform = 'translateY(20px)';
-                    
+
                     setTimeout(() => {
                         if (mobileMenuCta) {
                             mobileMenuCta.style.animation = 'slideInUp 0.4s ease forwards';
@@ -84,7 +84,7 @@ https://templatemo.com/tm-594-nexus-flow
                 e.stopPropagation();
                 closeMobileMenu();
             });
-            
+
             mobileMenuOverlay.addEventListener('click', (e) => {
                 e.stopPropagation();
                 closeMobileMenu();
@@ -143,14 +143,14 @@ https://templatemo.com/tm-594-nexus-flow
             const matrixRain = document.getElementById('matrixRain');
             const characters = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
             const columns = Math.floor(window.innerWidth / 20);
-            
+
             for (let i = 0; i < columns; i++) {
                 const column = document.createElement('div');
                 column.className = 'matrix-column';
                 column.style.left = `${i * 20}px`;
                 column.style.animationDuration = `${Math.random() * 5 + 10}s`;
                 column.style.animationDelay = `${Math.random() * 5}s`;
-                
+
                 // Generate random characters for the column
                 let text = '';
                 const charCount = Math.floor(Math.random() * 20 + 10);
@@ -158,7 +158,7 @@ https://templatemo.com/tm-594-nexus-flow
                     text += characters[Math.floor(Math.random() * characters.length)] + ' ';
                 }
                 column.textContent = text;
-                
+
                 matrixRain.appendChild(column);
             }
         }
@@ -167,14 +167,14 @@ https://templatemo.com/tm-594-nexus-flow
         function generateParticles() {
             const particlesContainer = document.getElementById('particlesContainer');
             const particleCount = 50;
-            
+
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'particle';
                 particle.style.left = `${Math.random() * 100}%`;
                 particle.style.animationDelay = `${Math.random() * 20}s`;
                 particle.style.animationDuration = `${Math.random() * 10 + 20}s`;
-                
+
                 particlesContainer.appendChild(particle);
             }
         }
@@ -183,7 +183,7 @@ https://templatemo.com/tm-594-nexus-flow
         function generateDataStreams() {
             const dataStreams = document.getElementById('dataStreams');
             const streamCount = 10;
-            
+
             for (let i = 0; i < streamCount; i++) {
                 const stream = document.createElement('div');
                 stream.className = 'data-stream';
@@ -191,7 +191,7 @@ https://templatemo.com/tm-594-nexus-flow
                 stream.style.left = `-300px`;
                 stream.style.animationDelay = `${Math.random() * 5}s`;
                 stream.style.transform = `rotate(${Math.random() * 30 - 15}deg)`;
-                
+
                 dataStreams.appendChild(stream);
             }
         }
@@ -219,7 +219,7 @@ https://templatemo.com/tm-594-nexus-flow
                 mouseTimer = setTimeout(() => {
                     const mouseX = e.clientX;
                     const mouseY = e.clientY;
-                    
+
                     // Move orbs slightly based on mouse position
                     const orbs = document.querySelectorAll('.orb');
                     orbs.forEach((orb, index) => {
@@ -228,7 +228,7 @@ https://templatemo.com/tm-594-nexus-flow
                         const y = (mouseY - window.innerHeight / 2) * speed;
                         orb.style.transform = `translate(${x}px, ${y}px)`;
                     });
-                    
+
                     // Make nearby particles glow brighter (desktop only)
                     if (window.innerWidth > 768) {
                         const particles = document.querySelectorAll('.particle');
@@ -237,7 +237,7 @@ https://templatemo.com/tm-594-nexus-flow
                             const particleX = rect.left + rect.width / 2;
                             const particleY = rect.top + rect.height / 2;
                             const distance = Math.sqrt(Math.pow(mouseX - particleX, 2) + Math.pow(mouseY - particleY, 2));
-                            
+
                             if (distance < 150) {
                                 const brightness = 1 - (distance / 150);
                                 particle.style.boxShadow = `0 0 ${20 + brightness * 30}px rgba(0, 255, 255, ${0.5 + brightness * 0.5})`;
@@ -248,7 +248,7 @@ https://templatemo.com/tm-594-nexus-flow
                             }
                         });
                     }
-                    
+
                     mouseTimer = null;
                 }, 16); // ~60fps
             }
@@ -342,7 +342,7 @@ https://templatemo.com/tm-594-nexus-flow
             button.addEventListener('mouseenter', function() {
                 this.style.boxShadow = '0 0 30px rgba(0, 255, 255, 0.6)';
             });
-            
+
             button.addEventListener('mouseleave', function() {
                 this.style.boxShadow = '';
             });
@@ -393,8 +393,8 @@ https://templatemo.com/tm-594-nexus-flow
         });
 
         // Random cyber text effects
-        const cyberTexts = ['CONNECTING...', 'NEURAL LINK ESTABLISHED', 'QUANTUM SYNC ACTIVE', 'REALITY MATRIX LOADED'];
-        
+        const cyberTexts = ['Short Circuit Studies', 'Coordination Studies', 'Arc Flash Studies'];
+
         setInterval(() => {
             const randomText = cyberTexts[Math.floor(Math.random() * cyberTexts.length)];
             const tempElement = document.createElement('div');
@@ -413,7 +413,7 @@ https://templatemo.com/tm-594-nexus-flow
                 text-shadow: 0 0 10px var(--primary-cyan);
             `;
             document.body.appendChild(tempElement);
-            
+
             setTimeout(() => {
                 document.body.removeChild(tempElement);
             }, 3000);
@@ -432,25 +432,25 @@ https://templatemo.com/tm-594-nexus-flow
         // Contact form submission
         document.querySelector('.btn-submit').addEventListener('click', function(e) {
             e.preventDefault();
-            
+
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
-            
+
             if (name && email && message) {
                 // Simulate form submission
                 this.textContent = 'TRANSMITTING...';
                 this.style.background = 'linear-gradient(135deg, var(--primary-cyan), var(--primary-pink))';
-                
+
                 setTimeout(() => {
                     this.textContent = 'TRANSMISSION COMPLETE';
                     this.style.background = 'var(--primary-cyan)';
-                    
+
                     // Clear form
                     document.getElementById('name').value = '';
                     document.getElementById('email').value = '';
                     document.getElementById('message').value = '';
-                    
+
                     // Reset button after 3 seconds
                     setTimeout(() => {
                         this.textContent = 'Transmit Message';

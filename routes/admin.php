@@ -2,8 +2,10 @@
 
 use App\Enums\PermissionEnum;
 use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\admin\PagesController;
 use App\Http\Controllers\admin\PermissionsController;
 use App\Http\Controllers\admin\RolesController;
+use App\Http\Controllers\admin\SettingsController;
 use App\Http\Controllers\admin\UsersController;
 use Illuminate\Support\Facades\Route;
 
@@ -82,4 +84,33 @@ Route::middleware(['auth','verified'])->name('admin.')->group(function () {
         ->middleware('permission:'.PermissionEnum::DELETE_PERMISSIONS->value)
         ->name('permissions.destroy');
     ###############################  End:Permissions Routes  #####################################
+
+    ############################### Start:Users Settings #####################################
+    Route::middleware('permission:'. PermissionEnum::LIST_SETTINGS->value)->group(function () {
+        Route::get('settings', [SettingsController::class, 'index'])->name('settings.index');
+        Route::get('/settings/all', [SettingsController::class, 'getSettingsData'])->name('settings.datatable');
+    });
+
+    Route::middleware('permission:'. PermissionEnum::UPDATE_SETTINGS->value)->group(function () {
+        Route::get('/settings/{settings}/edit', [SettingsController::class, 'edit'])->name('settings.edit');
+        Route::put('/settings/{id}', [SettingsController::class, 'update'])->name('settings.update');
+        Route::put('/settings/logo/{settings}', [SettingsController::class, 'updateLogo'])->name('settings.update.logo');
+    });
+
+    ###############################  End:Users Settings  #####################################
+
+    ############################### Start:Users Settings #####################################
+    Route::middleware('permission:'. PermissionEnum::LIST_SETTINGS->value)->group(function () {
+        Route::get('pages', [PagesController::class, 'index'])->name('pages.index');
+        Route::get('/pages/all', [PagesController::class, 'getPagesData'])->name('pages.datatable');
+    });
+
+    Route::middleware('permission:'. PermissionEnum::UPDATE_SETTINGS->value)->group(function () {
+        Route::get('/pages/{pages}/edit', [PagesController::class, 'edit'])->name('settings.edit');
+        Route::put('/pages/{id}', [PagesController::class, 'update'])->name('settings.update');
+        Route::post('/ckeditor/upload', [PagesController::class, 'uploadImage'])->name('ckeditor.upload');
+
+    });
+
+    ###############################  End:Users Settings  #####################################
 });

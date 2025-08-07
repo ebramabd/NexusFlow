@@ -1415,6 +1415,9 @@ https://templatemo.com/tm-594-nexus-flow
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            .logo{
+                font-size: 20px;
+            }
             .plan-name{
                 margin-bottom: 0;
                 margin-top: 60px;

@@ -94,7 +94,7 @@
                 @if(auth()->user()->hasAnyPermission(PermissionEnum::permissionPermissions()) || auth()->user()->hasAnyPermission(PermissionEnum::rolePermissions()))
                     <!--begin:Menu item-->
                     <div data-kt-menu-trigger="click"
-                         class="menu-item menu-accordion {{setMenuOpenClass(['admin.roles.index','admin.roles.show','admin.permissions.index'])}}">
+                         class="menu-item menu-accordion {{setMenuOpenClass(['admin.roles.index','admin.roles.show','admin.permissions.index','admin.settings.index','admin.pages.index'])}}">
                         <!--begin:Menu link-->
                         <span class="menu-link">
                         <span class="menu-icon">
@@ -148,6 +148,37 @@
                                 <!--end:Menu item-->
                             @endif
 
+                                @if(auth()->user()->hasAnyPermission(PermissionEnum::UPDATE_SETTINGS))
+                                    <!--begin:Menu item-->
+                                    <div class="menu-item">
+                                        <!--begin:Menu link-->
+                                        <a class="menu-link {{setActiveClass('admin.settings.index')}}"
+                                           href="{{route('admin.settings.index')}}">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                            <span class="menu-title">Settings</span>
+                                        </a>
+                                        <!--end:Menu link-->
+                                    </div>
+                                    <!--end:Menu item-->
+                                @endif
+
+                                @if(auth()->user()->hasAnyPermission(PermissionEnum::UPDATE_SETTINGS))
+                                    <!--begin:Menu item-->
+                                    <div class="menu-item">
+                                        <!--begin:Menu link-->
+                                        <a class="menu-link {{setActiveClass('admin.pages.index')}}"
+                                           href="{{route('admin.pages.index')}}">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                            <span class="menu-title">Pages</span>
+                                        </a>
+                                        <!--end:Menu link-->
+                                    </div>
+                                    <!--end:Menu item-->
+                                @endif
                         </div>
                         <!--end:Menu sub-->
                     </div>

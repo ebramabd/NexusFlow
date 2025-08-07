@@ -82122,7 +82122,7 @@ tinymce.IconManager.add('default', {
     var getPatternSet = function (editor) {
       var patterns = editor.getParam('textpattern_patterns', defaultPatterns, 'array');
       if (!isArray(patterns)) {
-        error('The setting textpattern_patterns should be an array');
+        error('The settings textpattern_patterns should be an array');
         return {
           inlinePatterns: [],
           blockPatterns: []

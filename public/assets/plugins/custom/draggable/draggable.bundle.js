@@ -4254,7 +4254,7 @@ class DragSensor extends _Sensor2.default {
     super(containers, options);
 
     /**
-     * Mouse down timer which will end up setting the draggable attribute, unless canceled
+     * Mouse down timer which will end up settings the draggable attribute, unless canceled
      * @property mouseDownTimeout
      * @type {Number}
      */
@@ -14648,7 +14648,7 @@ class DragSensor extends _Sensor2.default {
     super(containers, options);
 
     /**
-     * Mouse down timer which will end up setting the draggable attribute, unless canceled
+     * Mouse down timer which will end up settings the draggable attribute, unless canceled
      * @property mouseDownTimeout
      * @type {Number}
      */
@@ -19024,7 +19024,7 @@ class DragSensor extends _Sensor2.default {
     super(containers, options);
 
     /**
-     * Mouse down timer which will end up setting the draggable attribute, unless canceled
+     * Mouse down timer which will end up settings the draggable attribute, unless canceled
      * @property mouseDownTimeout
      * @type {Number}
      */
@@ -23926,7 +23926,7 @@ class DragSensor extends _Sensor2.default {
     super(containers, options);
 
     /**
-     * Mouse down timer which will end up setting the draggable attribute, unless canceled
+     * Mouse down timer which will end up settings the draggable attribute, unless canceled
      * @property mouseDownTimeout
      * @type {Number}
      */
@@ -29398,7 +29398,7 @@ class DragSensor extends _Sensor2.default {
     super(containers, options);
 
     /**
-     * Mouse down timer which will end up setting the draggable attribute, unless canceled
+     * Mouse down timer which will end up settings the draggable attribute, unless canceled
      * @property mouseDownTimeout
      * @type {Number}
      */
@@ -34765,7 +34765,7 @@ class DragSensor extends _Sensor2.default {
     super(containers, options);
 
     /**
-     * Mouse down timer which will end up setting the draggable attribute, unless canceled
+     * Mouse down timer which will end up settings the draggable attribute, unless canceled
      * @property mouseDownTimeout
      * @type {Number}
      */

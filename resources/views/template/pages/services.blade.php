@@ -12,4 +12,13 @@
         </div>--}}
     </div>
 </section>
+@php
+    $content = \App\Models\Settings::where('key', 'page_services')->first();
+@endphp
+@if($content->value)
+    <div style="margin: 0 50px">
+        {!! $content->value !!}
+    </div>
+@endif
+
 @endsection

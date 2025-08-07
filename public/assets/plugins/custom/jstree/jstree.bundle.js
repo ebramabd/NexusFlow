@@ -84,7 +84,7 @@
 		idregex : /[\\:&!^|()\[\]<>@*'+~#";.,=\- \/${}%?`]/g,
 		root : '#'
 	};
-	
+
 	/**
 	 * creates a jstree instance
 	 * @name $.jstree.create(el [, options])
@@ -454,7 +454,7 @@
 		 */
 		restore_focus : true,
 		/**
-		 * Force to compute and set "aria-setsize" and "aria-posinset" explicitly for each treeitem. 
+		 * Force to compute and set "aria-setsize" and "aria-posinset" explicitly for each treeitem.
 		 * Some browsers may compute incorrect elements position and produce wrong announcements for screen readers. Defaults to `false`
 		 * @name $.jstree.defaults.core.compute_elements_positions
 		 */
@@ -1268,7 +1268,7 @@
 			return !this.is_parent(obj);
 		},
 		/**
-		 * loads a node (fetches its children using the `core.data` setting). Multiple nodes can be passed to by using an array.
+		 * loads a node (fetches its children using the `core.data` settings). Multiple nodes can be passed to by using an array.
 		 * @name load_node(obj [, callback])
 		 * @param  {mixed} obj
 		 * @param  {function} callback a function to be executed once loading is complete, the function is executed in the instance's scope and receives two arguments - the node and a boolean status
@@ -2649,7 +2649,7 @@
 		 * @name open_node(obj [, callback, animation])
 		 * @param {mixed} obj the node to open
 		 * @param {Function} callback a function to execute once the node is opened
-		 * @param {Number} animation the animation duration in milliseconds when opening the node (overrides the `core.animation` setting). Use `false` for no animation.
+		 * @param {Number} animation the animation duration in milliseconds when opening the node (overrides the `core.animation` settings). Use `false` for no animation.
 		 * @trigger open_node.jstree, after_open.jstree, before_open.jstree
 		 */
 		open_node : function (obj, callback, animation) {
@@ -2768,7 +2768,7 @@
 		 * closes a node, hiding its children
 		 * @name close_node(obj [, animation])
 		 * @param {mixed} obj the node to close
-		 * @param {Number} animation the animation duration in milliseconds when closing the node (overrides the `core.animation` setting). Use `false` for no animation.
+		 * @param {Number} animation the animation duration in milliseconds when closing the node (overrides the `core.animation` settings). Use `false` for no animation.
 		 * @trigger close_node.jstree, after_close.jstree
 		 */
 		close_node : function (obj, animation) {
@@ -4963,7 +4963,7 @@
 		return d;
 	};
 	$.vakata.trim = function (text) {
-		return String.prototype.trim ? 
+		return String.prototype.trim ?
 			String.prototype.trim.call(text.toString()) :
 			text.toString().replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
 	};
@@ -5086,29 +5086,29 @@
 		 */
 		keep_selected_style	: true,
 		/**
-		 * This setting controls how cascading and undetermined nodes are applied.
+		 * This settings controls how cascading and undetermined nodes are applied.
 		 * If 'up' is in the string - cascading up is enabled, if 'down' is in the string - cascading down is enabled, if 'undetermined' is in the string - undetermined nodes will be used.
-		 * If `three_state` is set to `true` this setting is automatically set to 'up+down+undetermined'. Defaults to ''.
+		 * If `three_state` is set to `true` this settings is automatically set to 'up+down+undetermined'. Defaults to ''.
 		 * @name $.jstree.defaults.checkbox.cascade
 		 * @plugin checkbox
 		 */
 		cascade				: '',
 		/**
-		 * This setting controls if checkbox are bound to the general tree selection or to an internal array maintained by the checkbox plugin. Defaults to `true`, only set to `false` if you know exactly what you are doing.
+		 * This settings controls if checkbox are bound to the general tree selection or to an internal array maintained by the checkbox plugin. Defaults to `true`, only set to `false` if you know exactly what you are doing.
 		 * @name $.jstree.defaults.checkbox.tie_selection
 		 * @plugin checkbox
 		 */
 		tie_selection		: true,
 
 		/**
-		 * This setting controls if cascading down affects disabled checkboxes
+		 * This settings controls if cascading down affects disabled checkboxes
 		 * @name $.jstree.defaults.checkbox.cascade_to_disabled
 		 * @plugin checkbox
 		 */
 		cascade_to_disabled : true,
 
 		/**
-		 * This setting controls if cascading down affects hidden checkboxes
+		 * This settings controls if cascading down affects hidden checkboxes
 		 * @name $.jstree.defaults.checkbox.cascade_to_hidden
 		 * @plugin checkbox
 		 */
@@ -5138,7 +5138,7 @@
 			if(this.settings.checkbox.cascade.indexOf('undetermined') !== -1) {
 				this.element
 					.on('changed.jstree uncheck_node.jstree check_node.jstree uncheck_all.jstree check_all.jstree move_node.jstree copy_node.jstree redraw.jstree open_node.jstree', function () {
-							// only if undetermined is in setting
+							// only if undetermined is in settings
 							if(this._data.checkbox.uto) { clearTimeout(this._data.checkbox.uto); }
 							this._data.checkbox.uto = setTimeout(this._undetermined.bind(this), 50);
 						}.bind(this));
@@ -5448,9 +5448,9 @@
 			this.element.find('.jstree-closed').not(':has(.jstree-children)')
 				.each(function () {
 					var tmp = tt.get_node(this), tmp2;
-					
+
 					if(!tmp) { return; }
-					
+
 					if(!tmp.state.loaded) {
 						if(tmp.original && tmp.original.state && tmp.original.state.undetermined && tmp.original.state.undetermined === true) {
 							if(o[tmp.id] === undefined && tmp.id !== $.jstree.root) {
@@ -5835,7 +5835,7 @@
 				this.trigger('uncheck_node', { 'node' : obj, 'selected' : this._data.checkbox.selected, 'event' : e });
 			}
 		};
-		
+
 		/**
 		 * checks all nodes in the tree (only if tie_selection in checkbox settings is false, otherwise select_all will be called internally)
 		 * @name check_all()
@@ -6063,7 +6063,7 @@
 		 * * `_disabled` - a boolean indicating if this action should be disabled
 		 * * `label` - a string - the name of the action (could be a function returning a string)
 		 * * `title` - a string - an optional tooltip for the item
-		 * * `action` - a function to be executed if this item is chosen, the function will receive 
+		 * * `action` - a function to be executed if this item is chosen, the function will receive
 		 * * `icon` - a string, can be a path to an icon or a className, if using an image that is in the current directory use a `./` prefix, otherwise it will be detected as a class
 		 * * `shortcut` - keyCode which will trigger the action if the menu is open (for example `113` for rename, which equals F2)
 		 * * `shortcut_label` - shortcut label (like for example `F2` for rename)
@@ -6719,13 +6719,13 @@
 		 */
 		always_copy : false,
 		/**
-		 * when dropping a node "inside", this setting indicates the position the node should go to - it can be an integer or a string: "first" (same as 0) or "last", default is `0`
+		 * when dropping a node "inside", this settings indicates the position the node should go to - it can be an integer or a string: "first" (same as 0) or "last", default is `0`
 		 * @name $.jstree.defaults.dnd.inside_pos
 		 * @plugin dnd
 		 */
 		inside_pos : 0,
 		/**
-		 * when starting the drag on a node that is selected this setting controls if all selected nodes are dragged or only the single node, default is `true`, which means all selected nodes are dragged when the drag is started on a selected node
+		 * when starting the drag on a node that is selected this settings controls if all selected nodes are dragged or only the single node, default is `true`, which means all selected nodes are dragged when the drag is started on a selected node
 		 * @name $.jstree.defaults.dnd.drag_selection
 		 * @plugin dnd
 		 */
@@ -7355,7 +7355,7 @@
 	 *		"id1" : [{ "text" : "Child of ID1", "id" : "c1" }, { "text" : "Another child of ID1", "id" : "c2" }],
 	 *		"id2" : [{ "text" : "Child of ID2", "id" : "c3" }]
 	 *	}
-	 * 
+	 *
 	 * @name $.jstree.defaults.massload
 	 * @plugin massload
 	 */
@@ -7366,7 +7366,7 @@
 			parent.init.call(this, el, options);
 		};
 		this._load_nodes = function (nodes, callback, is_callback, force_reload) {
-			var s = this.settings.massload,				
+			var s = this.settings.massload,
 				toLoad = [],
 				m = this._model.data,
 				i, j, dom;
@@ -7472,7 +7472,7 @@
 		 * a jQuery-like AJAX config, which jstree uses if a server should be queried for results.
 		 *
 		 * A `str` (which is the search string) parameter will be added with the request, an optional `inside` parameter will be added if the search is limited to a node id. The expected result is a JSON array with nodes that need to be opened so that matching nodes will be revealed.
-		 * Leave this setting as `false` to not query the server. You can also set this to a function, which will be invoked in the instance's scope and receive 3 parameters - the search string, the callback to call with the array of nodes to load, and the optional node ID to limit the search to
+		 * Leave this settings as `false` to not query the server. You can also set this to a function, which will be invoked in the instance's scope and receive 3 parameters - the search string, the callback to call with the array of nodes to load, and the optional node ID to limit the search to
 		 * @name $.jstree.defaults.search.ajax
 		 * @plugin search
 		 */
@@ -7491,14 +7491,14 @@
 		case_sensitive : false,
 		/**
 		 * Indicates if the tree should be filtered (by default) to show only matching nodes (keep in mind this can be a heavy on large trees in old browsers).
-		 * This setting can be changed at runtime when calling the search method. Default is `false`.
+		 * This settings can be changed at runtime when calling the search method. Default is `false`.
 		 * @name $.jstree.defaults.search.show_only_matches
 		 * @plugin search
 		 */
 		show_only_matches : false,
 		/**
 		 * Indicates if the children of matched element are shown (when show_only_matches is true)
-		 * This setting can be changed at runtime when calling the search method. Default is `false`.
+		 * This settings can be changed at runtime when calling the search method. Default is `false`.
 		 * @name $.jstree.defaults.search.show_only_matches_children
 		 * @plugin search
 		 */
@@ -7958,7 +7958,7 @@
 		 */
 		filter	: false,
 		/**
-		 * Should loaded nodes be restored (setting this to true means that it is possible that the whole tree will be loaded for some users - use with caution). Defaults to `false`
+		 * Should loaded nodes be restored (settings this to true means that it is possible that the whole tree will be loaded for some users - use with caution). Defaults to `false`
 		 * @name $.jstree.defaults.state.preserve_loaded
 		 * @plugin state
 		 */
