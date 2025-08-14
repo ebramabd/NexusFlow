@@ -703,7 +703,8 @@ https://templatemo.com/tm-594-nexus-flow
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2.5rem;
+            gap: 3.5rem;
+            margin-bottom: -60px;
         }
 
         .nav-links a {
@@ -713,7 +714,7 @@ https://templatemo.com/tm-594-nexus-flow
             transition: all 0.3s ease;
             position: relative;
             text-transform: uppercase;
-            font-size: 0.9rem;
+            font-size: 1.5rem;
 
             letter-spacing: 1px;
         }

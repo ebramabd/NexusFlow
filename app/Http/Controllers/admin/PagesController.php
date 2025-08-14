@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Settings;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
-
+use Illuminate\Support\Str;
 class PagesController extends Controller
 {
     public function index()
@@ -23,7 +23,7 @@ class PagesController extends Controller
                 return $category->title;
             })
             ->addColumn('value', function ($category) {
-                return $category->value;
+                return Str::limit($category->value, 100);
             })
             ->addColumn('actions', function ($category) {
                 $actions = '';
@@ -64,7 +64,7 @@ class PagesController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'value' => 'required|string|max:255',
+            'value' => 'required|string',
         ]);
 
         try {

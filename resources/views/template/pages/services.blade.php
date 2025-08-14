@@ -1,6 +1,6 @@
 @extends('template.layout.master')
 @section('body')
-<section class="hero">
+<section class="hero" style="margin-top: 60px">
     <div class="hero-container">
         <h1 class="hero-title">
             <span class="hero-nexus">Our</span><span class="hero-flow">Services</span>

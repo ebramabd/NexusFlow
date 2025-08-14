@@ -45,3 +45,7 @@ Route::get('/template/advantages', function () {
 Route::get('/template/services', function () {
     return view('template.pages.services');
 })->name('pages.services');
+
+Route::get('/template/about', function () {
+    return view('template.pages.about');
+})->name('pages.about');
