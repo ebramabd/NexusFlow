@@ -11,11 +11,15 @@ $logo = \App\Models\Settings::where('key','logo')->first();
                 ContempusEngineering
             @endif
         </a>
+        <div class="nav-links" style="position: absolute; right: 0; top: 20px;">
+            <a style="cursor: default;">+14802274105</a>
+        </div>
+
         <ul class="nav-links">
             <li><a href="{{ route('pages.services') }}">Services</a></li>
             <li><a href="{{ route('pages.advantages') }}">Our Advantages</a></li>
             <li><a href="{{ route('pages.about') }}">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="{{ route('pages.contact') }}">Contact</a></li>
         </ul>
         {{--<div class="nav-bottom">
             <a href="#" class="cyber-button">Access Terminal</a>
@@ -38,15 +42,13 @@ $logo = \App\Models\Settings::where('key','logo')->first();
         <a href="#top" class="mobile-menu-logo">ContempusEngineering</a>
         <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
     </div>
-  {{--  <div class="mobile-menu-cta">
-        <a href="#" class="cyber-button">Access Terminal</a>
-    </div>--}}
     <nav class="mobile-menu-nav">
         <ul>
             <li><a href="{{ route('pages.services') }}">Services</a></li>
             <li><a href="{{ route('pages.advantages') }}">Our Advantages</a></li>
             <li><a href="{{ route('pages.about') }}">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="{{ route('pages.contact') }}">Contact</a></li>
+            <li><a style="cursor: default;">+14802274105</a></li>
         </ul>
     </nav>
 </div>

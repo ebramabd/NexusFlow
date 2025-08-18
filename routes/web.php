@@ -49,3 +49,11 @@ Route::get('/template/services', function () {
 Route::get('/template/about', function () {
     return view('template.pages.about');
 })->name('pages.about');
+
+Route::get('/template/contact', function () {
+    return view('template.pages.contact');
+})->name('pages.contact');
+
+Route::get('/template/policy', function () {
+    return view('template.pages.policy');
+})->name('pages.policy');

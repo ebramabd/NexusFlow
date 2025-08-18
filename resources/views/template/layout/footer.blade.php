@@ -7,9 +7,9 @@ $twitter = \App\Models\Settings::where('key', 'social_twitter')->first()->value 
 <footer class="footer">
     <div class="footer-content">
         <div class="footer-links">
-            <a href="#">Privacy Policy</a>
+            <a href="{{ route('pages.policy') }}">Privacy Policy</a>
             <span class="footer-separator">•</span>
-            <a href="#">Contact Support</a>
+            <a href="{{ route('pages.contact') }}">Contact US</a>
         </div>
         <div class="footer-social mt-3">
             <a href="{{ $instagram }}" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
