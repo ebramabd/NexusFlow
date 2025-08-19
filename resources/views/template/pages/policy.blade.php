@@ -2,7 +2,7 @@
 @section('body')
 <style>
     [data-custom-class='body'], [data-custom-class='body'] * {
-        background: #eee !important;
+        /*background: #eee !important;*/
     }
     [data-custom-class='title'], [data-custom-class='title'] * {
         font-family: Arial !important;
@@ -25,7 +25,7 @@
         color: #000000 !important;
     }
     [data-custom-class='body_text'], [data-custom-class='body_text'] * {
-        color: #595959 !important;
+        color: lightgray !important;
         font-size: 14px !important;
         font-family: Arial !important;
     }

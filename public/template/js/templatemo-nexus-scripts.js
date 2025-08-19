@@ -141,7 +141,7 @@ https://templatemo.com/tm-594-nexus-flow
         // Generate Matrix Rain Effect
         function generateMatrixRain() {
             const matrixRain = document.getElementById('matrixRain');
-            const characters = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+            const characters = 'POWER SYSTEM STUDIES  ARC FLASH STUDIES  SHORT CIRCUIT STUDIES  COORDINATION STUDIES HARMONIC STUDIES';
             const columns = Math.floor(window.innerWidth / 20);
 
             for (let i = 0; i < columns; i++) {

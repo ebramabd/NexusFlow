@@ -2,6 +2,7 @@
 
 use App\Enums\PermissionEnum;
 use App\Enums\RoleEnum;
+use App\Http\Controllers\admin\ContactController;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -57,3 +58,5 @@ Route::get('/template/contact', function () {
 Route::get('/template/policy', function () {
     return view('template.pages.policy');
 })->name('pages.policy');
+
+Route::post('/contact-submit', [ContactController::class, 'submitContact'])->name('contact.submit');

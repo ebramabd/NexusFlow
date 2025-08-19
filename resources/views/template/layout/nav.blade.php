@@ -5,25 +5,23 @@ $logo = \App\Models\Settings::where('key','logo')->first();
 <nav>
     <div class="nav-container">
         <a href="{{ route('pages.home') }}" class="logo">
-            @if($logo->value)
-                <img src="{{asset($logo->value)}}" style="height: 100px; width: 100px; border-radius: 10px" >
-            @else
+{{--            @if($logo->value)--}}
+{{--                <img src="{{asset($logo->value)}}" style="height: 100px; width: 100px; border-radius: 10px" >--}}
+{{--            @else--}}
                 ContempusEngineering
-            @endif
+{{--            @endif--}}
         </a>
-        <div class="nav-links" style="position: absolute; right: 0; top: 20px;">
-            <a style="cursor: default;">+14802274105</a>
-        </div>
+        {{--<div class="nav-links" style="position: absolute; right: 0; top: 20px;">
+            <a href="tel:4802274105">(480)227-4105</a>
+        </div>--}}
 
         <ul class="nav-links">
             <li><a href="{{ route('pages.services') }}">Services</a></li>
             <li><a href="{{ route('pages.advantages') }}">Our Advantages</a></li>
             <li><a href="{{ route('pages.about') }}">About Us</a></li>
             <li><a href="{{ route('pages.contact') }}">Contact</a></li>
+            <li><a href="tel:4802274105">(480)227-4105</a></li>
         </ul>
-        {{--<div class="nav-bottom">
-            <a href="#" class="cyber-button">Access Terminal</a>
-        </div>--}}
         <button class="mobile-menu-button" id="mobileMenuBtn">
             <div class="hamburger">
                 <span></span>
@@ -48,7 +46,7 @@ $logo = \App\Models\Settings::where('key','logo')->first();
             <li><a href="{{ route('pages.advantages') }}">Our Advantages</a></li>
             <li><a href="{{ route('pages.about') }}">About Us</a></li>
             <li><a href="{{ route('pages.contact') }}">Contact</a></li>
-            <li><a style="cursor: default;">+14802274105</a></li>
+            <li><a href="tel:4802274105">(480) 227-4105</a></li>
         </ul>
     </nav>
 </div>
