@@ -20,7 +20,9 @@
     <div class="hero-container">
         <div class="service-box" id="short_circuit_studies">
             <div class="service-header">
-                <div class="service-icon">⚡</div>
+                <div class="feature-icon" style="width: 70px !important; height: 70px !important;">
+                    <img src="{{ asset('template/home-img/1-Short Circuit Studies.png') }}">
+                </div>
                 <h3 class="service-title">Short Circuit Studies</h3>
             </div>
 
@@ -55,7 +57,10 @@
         </div>
         <div class="service-box" id="protective_device_coordination_studies">
             <div class="service-header">
-                <div class="service-icon">🔮</div>
+                <div class="feature-icon" style="width: 70px !important; height: 70px !important;">
+                    <img src="{{ asset('template/home-img/2-Protective Device Coordination Studies.png') }}">
+
+                </div>
                 <h3 class="service-title">PROTECTIVE DEVICE COORDINATION STUDIES</h3>
             </div>
 
@@ -85,7 +90,9 @@
         </div>
         <div class="service-box" id="arc_flash_studies">
             <div class="service-header">
-                <div class="service-icon">🌐</div>
+                <div class="feature-icon" style="width: 70px !important; height: 70px !important;">
+                    <img src="{{ asset('template/home-img/3-Arc Flash Studies.png') }}">
+                </div>
                 <h3 class="service-title">ARC FLASH STUDIES</h3>
             </div>
 
@@ -139,7 +146,9 @@
         </div>
         <div class="service-box" id="harmonic_studies">
             <div class="service-header">
-                <div class="service-icon">🛡️</div>
+                <div class="feature-icon" style="width: 70px !important; height: 70px !important;">
+                    <img src="{{ asset('template/home-img/4-Harmonic Studies.png') }}">
+                </div>
                 <h3 class="service-title">HARMONIC STUDIES</h3>
             </div>
 
@@ -163,7 +172,9 @@
         </div>
         <div class="service-box" id="reliability_studies">
             <div class="service-header">
-                <div class="service-icon">🚀</div>
+                <div class="feature-icon" style="width: 70px !important; height: 70px !important;">
+                    <img src="{{ asset('template/home-img/5-Reliability Studies.png') }}">
+                </div>
                 <h3 class="service-title">RELIABILITY STUDIES</h3>
             </div>
 
@@ -192,7 +203,9 @@
         </div>
         <div class="service-box" id="Voltage_and_Motor_Starting_Studies">
             <div class="service-header">
-                <div class="service-icon">🎯</div>
+                <div class="feature-icon" style="width: 70px !important; height: 70px !important;">
+                    <img src="{{ asset('template/home-img/6-Voltage and Motor Starting Studies.png') }}">
+                </div>
                 <h3 class="service-title">MOTOR STARTING STUDIES</h3>
             </div>
 
@@ -221,7 +234,9 @@
         </div>
         <div class="service-box" id="">
             <div class="service-header">
-                <div class="service-icon">🎯</div>
+                <div class="feature-icon" style="width: 70px !important; height: 70px !important;">
+                    <img src="{{ asset('template/home-img/1-Short Circuit Studies.png') }}">
+                </div>
                 <h3 class="service-title">DUCTBANK HEATING STUDIES</h3>
             </div>
 

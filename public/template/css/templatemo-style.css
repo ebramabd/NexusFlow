@@ -1820,3 +1820,38 @@ https://templatemo.com/tm-594-nexus-flow
         font-size: 1.8rem;
     }
 }
+
+
+.alert {
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.1);
+}
+
+.alert-icon {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background: #e6f9f0;
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+}
+
+.alert-danger {
+    background: #fdecea;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+}
+
+.alert-danger ul {
+    margin: 0;
+    padding-left: 18px;
+}

@@ -9,7 +9,28 @@
             </div>
 
             <div class="contact-form-wrapper">
-                <form type="POST" action="{{ route('contact.submit') }}">
+                <form method="POST" action="{{ route('contact.submit') }}">
+                    @csrf
+
+                    @if(session('success'))
+                        <div class="alert alert-success">
+                            <span class="alert-icon">✔</span>
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    @if($errors->any())
+                        <div class="alert alert-danger">
+                            <span class="alert-icon">⚠</span>
+                            <ul class="mb-0">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+
                     <div class="contact-form">
                         <div class="form-group">
                             <label for="name">Contact Name</label>

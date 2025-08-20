@@ -24,14 +24,14 @@ $twitter = \App\Models\Settings::where('key', 'social_twitter')->first()->value 
 
 <script src="{{ asset('template/js/templatemo-nexus-scripts.js') }}"></script>
 <!-- Load the reCAPTCHA API -->
-{{--<script src="https://www.google.com/recaptcha/api.js?render=6LcwYKorAAAAAK35giOXDR3HyqHAEi8PkwzJ5lMv"></script>--}}
-{{--<script>--}}
-{{--    grecaptcha.ready(function() {--}}
-{{--        grecaptcha.execute('6LcwYKorAAAAAK35giOXDR3HyqHAEi8PkwzJ5lMv', {action: 'contact'}).then(function(token) {--}}
-{{--            document.getElementById('g-recaptcha-response').value = token;--}}
-{{--        });--}}
-{{--    });--}}
-{{--</script>--}}
+<script src="https://www.google.com/recaptcha/api.js?render=6LcwYKorAAAAAK35giOXDR3HyqHAEi8PkwzJ5lMv"></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LcwYKorAAAAAK35giOXDR3HyqHAEi8PkwzJ5lMv', {action: 'contact'}).then(function(token) {
+            document.getElementById('g-recaptcha-response').value = token;
+        });
+    });
+</script>
 
 </body>
 </html>

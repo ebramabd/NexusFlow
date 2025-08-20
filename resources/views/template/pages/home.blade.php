@@ -26,28 +26,36 @@
         <div class="features-grid">
             <div class="feature-card">
                 <a href="{{ route('pages.services') }}#short_circuit_studies" style="text-decoration: none;">
-                    <div class="feature-icon">⚡</div>
+                    <div class="feature-icon">
+                        <img src="{{ asset('template/home-img/1-Short Circuit Studies.png') }}">
+                    </div>
                     <h3>Short Circuit Studies</h3>
                     <p>We perform short circuit studies in accordance with ANSI or IEC standards. We use proprietary AI tools to clarify data instead of pages of undistinguishable numbers. All data is reviewed by our Professional Engineers.</p>
                 </a>
             </div>
             <div class="feature-card">
                 <a href="{{ route('pages.services') }}#protective_device_coordination_studies" style="text-decoration: none;">
-                    <div class="feature-icon">🔮</div>
+                    <div class="feature-icon">
+                        <img src="{{ asset('template/home-img/2-Protective Device Coordination Studies.png') }}">
+                    </div>
                     <h3>Protective Device Coordination Studies</h3>
                     <p>Let our experts evaluate your system and make recommendations for protective devices (fuses, circuit breakers, relays) to achieve maximum protection of your valuable equipment, and increase uptime by reducing nuisance trips.</p>
                 </a>
             </div>
             <div class="feature-card">
                 <a href="{{ route('pages.services') }}#arc_flash_studies" style="text-decoration: none;">
-                    <div class="feature-icon">🌐</div>
+                    <div class="feature-icon">
+                        <img src="{{ asset('template/home-img/3-Arc Flash Studies.png') }}">
+                    </div>
                     <h3>Arc Flash Studies</h3>
                     <p>In Arc Flash Studies, maximizing safety is paramount. Let our AI tools and Professional Engineer reviewed results maximize safety and ease of testing or working on energized equipment.</p>
                 </a>
             </div>
             <div class="feature-card">
                 <a href="{{ route('pages.services') }}#harmonic_studies" style="text-decoration: none;">
-                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-icon">
+                        <img src="{{ asset('template/home-img/4-Harmonic Studies.png') }}">
+                    </div>
                     <h3>Harmonic Studies</h3>
                     <p>High levels of harmonic distortion in power delivery can cause overheating of electrical systems and affect computer and motor loads. Let our AI powered analysis pinpoint problems and identify solutions without having you page through thousands of pages of data.</p>
                 </a>
@@ -55,7 +63,9 @@
 
             <div class="feature-card">
                 <a href="{{ route('pages.services') }}#reliability_studies" style="text-decoration: none;">
-                    <div class="feature-icon">🚀</div>
+                    <div class="feature-icon">
+                        <img src="{{ asset('template/home-img/6-Voltage and Motor Starting Studies.png') }}">
+                    </div>
                     <h3>Reliability Studies</h3>
                     <p>A chain is only as strong as its weakest link. Let us perform a reliability study of your electrical system to pinpoint areas of concern, and maximize uptime of your plant or campus’ lifeblood – the electrical system!</p>
                 </a>
@@ -63,7 +73,9 @@
 
             <div class="feature-card">
                 <a href="{{ route('pages.services') }}#Voltage_and_Motor_Starting_Studies" style="text-decoration: none;">
-                    <div class="feature-icon">🎯</div>
+                    <div class="feature-icon">
+                        <img src="{{ asset('template/home-img/1-Short Circuit Studies.png') }}">
+                    </div>
                     <h3>Voltage and Motor Starting Studies</h3>
                     <p>Whenever a motor starts, a voltage drop is experienced on the system. Let us mitigate problems occurring on your electrical system from the impacts of starting motors necessary to your processes.</p>
                 </a>

@@ -431,7 +431,7 @@ https://templatemo.com/tm-594-nexus-flow
 
         // Contact form submission
         document.querySelector('.btn-submit').addEventListener('click', function(e) {
-            e.preventDefault();
+            // e.preventDefault();
 
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;

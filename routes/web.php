@@ -59,4 +59,5 @@ Route::get('/template/policy', function () {
     return view('template.pages.policy');
 })->name('pages.policy');
 
-Route::post('/contact-submit', [ContactController::class, 'submitContact'])->name('contact.submit');
+Route::post('/contact-submit', [ContactController::class, 'send_message'])->name('contact.submit');
+
