@@ -1771,6 +1771,7 @@ https://templatemo.com/tm-594-nexus-flow
     transition: all 0.3s ease;
     font-size: 0.9rem;
     color: #ffffff;
+    text-align: left;
 }
 
 .benefit-item:hover {
@@ -1820,7 +1821,7 @@ https://templatemo.com/tm-594-nexus-flow
         font-size: 1.8rem;
     }
 }
-
+/*alert*/
 
 .alert {
     padding: 15px 20px;
@@ -1855,3 +1856,57 @@ https://templatemo.com/tm-594-nexus-flow
     margin: 0;
     padding-left: 18px;
 }
+
+
+/* Location Section */
+.location-section {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.location-card {
+    max-width: 900px;
+    width: 100%;
+    background: #1a0b2e;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.location-text {
+    flex: 1;
+}
+
+.location-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #eee;
+}
+
+.location-text p {
+    font-size: 1rem;
+    color: #eee;
+}
+
+.location-graphic img {
+    max-width: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .location-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .location-graphic img {
+        max-width: 100%;
+    }
+}
+

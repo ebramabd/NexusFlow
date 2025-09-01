@@ -64,7 +64,7 @@
             <div class="feature-card">
                 <a href="{{ route('pages.services') }}#reliability_studies" style="text-decoration: none;">
                     <div class="feature-icon">
-                        <img src="{{ asset('template/home-img/6-Voltage and Motor Starting Studies.png') }}">
+                        <img src="{{ asset('template/home-img/5-Reliability Studies.png') }}">
                     </div>
                     <h3>Reliability Studies</h3>
                     <p>A chain is only as strong as its weakest link. Let us perform a reliability study of your electrical system to pinpoint areas of concern, and maximize uptime of your plant or campus’ lifeblood – the electrical system!</p>
@@ -74,7 +74,7 @@
             <div class="feature-card">
                 <a href="{{ route('pages.services') }}#Voltage_and_Motor_Starting_Studies" style="text-decoration: none;">
                     <div class="feature-icon">
-                        <img src="{{ asset('template/home-img/1-Short Circuit Studies.png') }}">
+                        <img src="{{ asset('template/home-img/6-Voltage and Motor Starting Studies.png') }}">
                     </div>
                     <h3>Voltage and Motor Starting Studies</h3>
                     <p>Whenever a motor starts, a voltage drop is experienced on the system. Let us mitigate problems occurring on your electrical system from the impacts of starting motors necessary to your processes.</p>

@@ -1,9 +1,9 @@
 <!-- Footer -->
-@php
+{{--@php
 $face = \App\Models\Settings::where('key', 'social_facebook')->first()->value ?? '#';
 $instagram = \App\Models\Settings::where('key', 'social_instagram')->first()->value ?? '#';
 $twitter = \App\Models\Settings::where('key', 'social_twitter')->first()->value ?? '#';
-@endphp
+@endphp--}}
 <footer class="footer">
     <div class="footer-content">
         <div class="footer-links">
@@ -11,11 +11,11 @@ $twitter = \App\Models\Settings::where('key', 'social_twitter')->first()->value 
             <span class="footer-separator">•</span>
             <a href="{{ route('pages.contact') }}">Contact US</a>
         </div>
-        <div class="footer-social mt-3">
+     {{--   <div class="footer-social mt-3">
             <a href="{{ $instagram }}" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
             <a href="{{ $twitter }}" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
             <a href="{{ $face }}" class="footer-social-icon"><i class="fab fa-facebook"></i></a>
-        </div>
+        </div>--}}
         <div class="footer-bottom">
             <p>&copy; 2025 Contempus Engineering. All rights reserved.</p>
         </div>

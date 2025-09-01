@@ -35,7 +35,7 @@ $logo = \App\Models\Settings::where('key','logo')->first();
 <!-- Mobile Menu -->
 <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
 
-<div class="mobile-menu" id="mobileMenu" style="margin-top: 70px">
+<div class="mobile-menu" id="mobileMenu" >
     <div class="mobile-menu-header">
         <a href="#top" class="mobile-menu-logo">ContempusEngineering</a>
         <button class="mobile-menu-close" id="mobileMenuClose">✕</button>

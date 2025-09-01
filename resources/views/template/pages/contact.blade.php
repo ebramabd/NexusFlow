@@ -53,22 +53,36 @@
         </div>
     </section>
 
-<section class="hero">
-    <div class="hero-container" >
-        <div class="contact-card">
-            <h3>Our Address</h3>
-            <p>
-                4515 S McClintock Dr<br>
-                Suite 115<br>
-                Tempe, AZ 85282
-            </p>
-            <h3>Telephone</h3>
-            <p>
-                <a style="cursor: default;">(480) 227-4105</a>
-            </p>
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="location-card">
+            <div class="location-text">
+                <h3>Our Location</h3>
+                <p>We are located in the <strong>Tempe Corporate Center</strong>.</p>
+            </div>
+            <div class="location-graphic">
+                <img src="{{ asset('template/home-img/contact-image.jpeg') }}" alt="Tempe Corporate Center Graphic">
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
+    <section class="hero">
+        <div class="hero-container" >
+            <div class="contact-card">
+                <h3>Our Address</h3>
+                <p>
+                    4515 S McClintock Dr<br>
+                    Suite 115<br>
+                    Tempe, AZ 85282
+                </p>
+                <h3>Telephone</h3>
+                <p>
+                    <a style="cursor: default;">(480) 227-4105</a>
+                </p>
+            </div>
+        </div>
+    </section>
 @endsection
 
 
