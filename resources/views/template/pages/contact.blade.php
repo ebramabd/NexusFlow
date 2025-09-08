@@ -66,8 +66,7 @@
         </div>
     </section>
 
-
-    <section class="hero">
+    <section class="contact-form" style="border: 0; text-align: center">
         <div class="hero-container" >
             <div class="contact-card">
                 <h3>Our Address</h3>
@@ -83,6 +82,7 @@
             </div>
         </div>
     </section>
+
 @endsection
 
 

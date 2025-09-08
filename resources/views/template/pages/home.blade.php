@@ -1,7 +1,7 @@
 @extends('template.layout.master')
 @section('body')
 <!-- Hero Section -->
-<section class="hero" style="margin-top: 60px">
+<section class="hero">
     <div class="hero-container">
         <h1 class="hero-title">
             <span class="hero-nexus">Contempus</span><span class="hero-flow">Engineering</span>
@@ -67,7 +67,7 @@
                         <img src="{{ asset('template/home-img/5-Reliability Studies.png') }}">
                     </div>
                     <h3>Reliability Studies</h3>
-                    <p>A chain is only as strong as its weakest link. Let us perform a reliability study of your electrical system to pinpoint areas of concern, and maximize uptime of your plant or campus’ lifeblood – the electrical system!</p>
+                    <p>A chain is only as strong as its weakest link. Let us perform a reliability study of your electrical system to pinpoint areas of concern, and maximize uptime of your plant or campus&rsquo; lifeblood &ndash; the electrical system!</p>
                 </a>
             </div>
 
@@ -90,10 +90,10 @@
     <div class="contact-container">
         <div class="section-header">
             <h2 class="section-title">Contact Us Today</h2>
-            <p class="section-subtitle">We’re here to help you make sense of your electrical system and maximize your investment, not to submit thousands of pages of data and walk away. Let us help bring clarity, understanding and relief to your facilities team!</p>
+            <p class="section-subtitle">We &rsquo;re here to help you make sense of your electrical system and maximize your investment, not to submit thousands of pages of data and walk away. Let us help bring clarity, understanding and relief to your facilities team!</p>
         </div>
         <div class="hero-buttons">
-            <a href="{{ route('pages.contact') }}" class="btn-primary">Move contact Page</a>
+            <a href="{{ route('pages.contact') }}" class="btn-primary" style="text-align: center">Contact us</a>
         </div>
         <div class="contact-form-wrapper">
         </div>

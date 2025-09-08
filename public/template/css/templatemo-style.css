@@ -741,7 +741,7 @@ https://templatemo.com/tm-594-nexus-flow
 
         /* Hero Section */
         .hero {
-            padding: 150px 2rem 100px;
+            padding: 150px 0 100px;
             text-align: center;
             position: relative;
             min-height: 100vh;
@@ -974,7 +974,7 @@ https://templatemo.com/tm-594-nexus-flow
 
         /* Features Section */
         .features {
-            padding: 120px 2rem;
+            padding: 0 2rem;
             position: relative;
         }
 
@@ -1234,14 +1234,15 @@ https://templatemo.com/tm-594-nexus-flow
 
         /* Contact Section */
         .contact {
-            padding: 120px 2rem;
+            padding: 120px -1px;
+            margin-top: 50px;
             background: rgba(0, 255, 255, 0.02);
             border-top: 1px solid var(--border-color);
         }
 
         .contact-container {
             max-width: 1400px;
-            margin: 0 auto;
+            margin: 50px auto;
         }
 
         .contact-form-wrapper {
@@ -1466,7 +1467,7 @@ https://templatemo.com/tm-594-nexus-flow
             }
 
             .contact {
-                padding: 80px 1rem;
+                padding: 0 1rem;
             }
 
             .contact-form {
