@@ -17,7 +17,6 @@
             </div>
 
             <div class="elements">
-                {{--content--}}
                     <div class="service-content" style="width: 100%">
                         <p class="service-description">
                             Short circuit studies are critical to electrical system reliability and safety. Electrical codes require protective devices (fuses, circuit breakers) to be rated to interrupt the calculated short circuit current. Electrical codes also require the maximum short circuit current to be listed at each service.
@@ -252,9 +251,7 @@
                 </div>
                 <h3 class="service-title">MOTOR STARTING STUDIES</h3>
             </div>
-
             <div class="elements">
-
                 <div class="service-content">
                 <p class="service-description">
                     Whenever a motor starts, a voltage drop is experienced on the system. The voltage drop can result in problems with other equipment, nuisance flickering of lights, overheating of feeder cables, and in extreme cases, motors not starting correctly when required. Contempus Engineering can do the following during a motor starting study:
@@ -284,7 +281,7 @@
             </div>
                 {{--image--}}
                 <div class="service-image-container">
-                    <img src="{{ asset('template/home-img/services/Motor Starting Study1.png') }}" style="" alt="ANSI Service">
+                    <img src="{{ asset('template/home-img/services/monotOR.png') }}" style="" alt="ANSI Service">
                 </div>
             </div>
         </div>
@@ -324,9 +321,90 @@
                     Ductbank heating calculations can actually save you money during installation by optimizing the number of conductors and reducing the amount of thermal backfill needed. We have saved our clients hundreds of thousands of dollars by optimizing the amount of thermal backfill and trenching needed! Let us review your design today!
                 </p>
             </div>
-                {{--image--}}
+            <div class="service-image-container">
+                <img src="{{ asset('template/home-img/services/DUCTBANK HEATING STUDIES 2.png') }}" style="" alt="ANSI Service">
+            </div>
+            </div>
+        </div>
+        <div class="service-box" id="">
+            <div class="service-header">
+                <div class="feature-icon" style="width: 70px !important; height: 70px !important;">
+                    <img src="{{ asset('template/home-img/LOAD FLOW.png') }}">
+                </div>
+                <h3 class="service-title">LOAD FLOW, VOLTAGE DROP STUDIES</h3>
+            </div>
+            <div class="elements">
+                <div class="service-content">
+                    <p class="service-description">
+                        Contempus Engineering has extensive experience in performing load flow and voltage drop studies.
+                        These studies are useful for not only new facilities, but existing facilities. Load flow and voltage drop studies help identify:
+                    </p>
+                    <div class="key-benefits">
+                        <div style="text-align: left">
+                            <i class="fas fa-circle"></i>
+                            <span>Risk of overloading feeders</span>
+                        </div>
+                        <div style="text-align: left">
+                            <i class="fas fa-circle"></i>
+                            <span>Excessive voltage drop at various points in the system</span>
+                        </div>
+                        <div style="text-align: left">
+                            <i class="fas fa-circle"></i>
+                            <span>Utility voltage issues</span>
+                        </div>
+                        <div style="text-align: left">
+                            <i class="fas fa-circle"></i>
+                            <span>Adjustment of transformer taps to improve voltage</span>
+                        </div>
+                    </div>
+
+                    <p class="service-description">
+                        We have extensive experience in load flow and voltage drop studies, and can assist with convergence errors and similar issues that prevent accurate results.
+                    </p>
+                </div>
                 <div class="service-image-container">
-                    <img src="{{ asset('template/home-img/services/DUCTBANK HEATING STUDIES 2.png') }}" style="" alt="ANSI Service">
+                    <img src="{{ asset('template/home-img/services/image-service.png') }}" style="" alt="ANSI Service">
+                </div>
+            </div>
+        </div>
+        <div class="service-box" id="">
+            <div class="service-header">
+                <div class="feature-icon" style="width: 70px !important; height: 70px !important;">
+                    <img src="{{ asset('template/home-img/POWER SYSTEM PROJECT RE-CREATION, CONVERSION (1).png') }}">
+                </div>
+                <h3 class="service-title">POWER SYSTEM PROJECT RE-CREATION, CONVERSION</h3>
+            </div>
+            <div class="elements">
+                <div class="service-content">
+                    <p class="service-description">
+                        Our team is well versed in use of ETAP, SKM, and EasyPower software packages. All too often the end client is given a PDF (or hardcopy) of a power system study report. However, updating the project as required by National Electric Code and NFPA 70E is virtually impossible. Or, your facility may prefer one software package over another. Let our team convert your project from one software package to another cost-effectively.
+                        We have teams that have rolling availability to complete project conversion quickly, accurately, and very cost-effectively.
+                    </p>
+                    <div class="key-benefits">
+                        <div style="text-align: left">
+                            <i class="fas fa-circle"></i>
+                            <span>Recreation of project files from PDF files or hardcopy study reports</span>
+                        </div>
+                        <div style="text-align: left">
+                            <i class="fas fa-circle"></i>
+                            <span>Updating of projects from older versions of ETAP, SKM, and EasyPower to the latest versions</span>
+                        </div>
+                        <div style="text-align: left">
+                            <i class="fas fa-circle"></i>
+                            <span>Converting of projects from one software package (ETAP, SKM, or EasyPower) to another</span>
+                        </div>
+                        <div style="text-align: left">
+                            <i class="fas fa-circle"></i>
+                            <span>All conversions are reviewed by a Professional Engineer for accuracy and completeness</span>
+                        </div>
+                        <div style="text-align: left">
+                            <i class="fas fa-circle"></i>
+                            <span>Field verification of existing projects for accuracy and completeness</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image-container">
+                    <img src="{{ asset('template/home-img/services/image-service-2.jpg') }}" style="" alt="ANSI Service">
                 </div>
             </div>
         </div>
